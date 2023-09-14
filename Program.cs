@@ -4,8 +4,10 @@
     {
         static void Main(string[] args)
         {
-            int number1 = 12;
-            int number2 = 4;
+            Random random = new Random();
+            
+            int number1 = random.Next(1, 25);
+            int number2 = random.Next(1, 25);
 
             int sum = Sum(number1, number2);
             int square = Square(sum);
